@@ -1,0 +1,92 @@
+baseURL: "https://www.podocaremari.com/"
+theme: "up-business-theme"
+languageCode: "en-us"
+
+title: "Podocare Mari"
+
+# googleAnalytics: ""
+
+summaryLength: 20
+
+params:
+  title: "Podocare Maris"
+  description: "Lorem ipsum dolor ."
+  images: 
+    - "images/hero-image.png"
+
+  logo: "arrow-up.png"
+
+  favicons:
+    themeColor: "#FFFFFF"
+    backgroundColor: "#FFFFFF"
+    faviconColor: "#000000"
+
+  social:
+    dribbble: "#"
+    instagram: "#"
+    facebook: "#"
+    twitter: "#"
+
+  location:
+    - "Hendrik Veenemastraat 31, 5691BA Son en Breugel"
+
+  contact:
+    - "maria.revina@gmail.com"
+    - "0685598001"
+
+  copyright: "© 2023 Podocare Mari All Rights Reserved"
+
+  postProcess: false
+
+menus:
+  main:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    # - name: "How we work"
+    #   url: "/#"
+    #   weight: 2
+
+    # - name: "Our team"
+    #   url: "/#"
+    #   weight: 3
+
+    # - name: "Pricing"
+    #   url: "/#"
+    #   weight: 4
+
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
+
+  buttons:
+    - name: "Lorem ipsum"
+      url: "/#"
+      weight: 5
+      pre: "btn btn-primary text-light"
+
+  footer:
+    - name: "Home"
+      url: "/#hero"
+      weight: 1
+
+    # - name: "How we work"
+    #   url: "/#"
+    #   weight: 2
+
+    # - name: "Our team"
+    #   url: "/#"
+    #   weight: 3
+
+    # - name: "Pricing"
+    #   url: "/#"
+    #   weight: 4
+
+    # - name: "Blog"
+    #   url: "/blog"
+    #   weight: 5
+
+taxonomies:
+  series: "series"
+  tags: "tags"
