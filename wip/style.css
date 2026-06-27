@@ -12,13 +12,16 @@ body {
     line-height: 1.6;
     color: #333;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 30px;
 }
 
 .container {
     max-width: 1200px;
+    width: 100%;
     display: flex;
     border-radius: 15px;
     overflow: hidden;
@@ -100,6 +103,87 @@ p {
     color: #2980b9;
 }
 
+.boek-nu {
+    display: inline-block;
+    align-self: center;
+    margin: 10px 0 20px;
+    padding: 14px 40px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.25);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.boek-nu:hover {
+    background-color: #1a252f;
+    transform: translateY(-2px);
+}
+
+.pricing {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #cecba2;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.price-list {
+    list-style: none;
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 10px;
+}
+
+.price-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.18);
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price-list .service {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.price-list .price {
+    flex-shrink: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #2c3e50;
+    background-color: #fff;
+    padding: 4px 16px;
+    border-radius: 6px;
+    min-width: 70px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -140,5 +224,18 @@ p {
 
     .contact-info {
         margin-top: 20px;
+    }
+
+    .pricing {
+        padding: 25px 20px;
+    }
+
+    .pricing h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .price-list .service {
+        font-size: 1em;
     }
 }
